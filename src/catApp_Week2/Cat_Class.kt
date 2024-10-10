@@ -32,9 +32,9 @@ class Cat (nameIn: String, ageIn: Int, weightIn: Int) {
         return "Name: $name Age: $age Weight: $weight"
     }
 
-    fun eat() : Boolean {
-        if (weight < 20) {
-            weight++
+    fun eat(amount: Int) : Boolean {
+        if (weight + amount < 20) {
+            weight += amount
             return true
         }
         return false

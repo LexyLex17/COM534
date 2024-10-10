@@ -11,12 +11,12 @@ fun main (args: Array<String>) {
     val flathead = Cat("Flathead", 7, 10)
     val cupra = Cat("Cupra", 2, 7)
     for (i in 1..2) {
-        println(if (flathead.eat()) "Cat CONSUMED" else "Fat fucking cat (walk them)")
+        println(if (flathead.eat(6)) "Cat CONSUMED" else "Feeding them this much would make them overweight!")
     }
     println("$flathead")
 
     for (i in 1..4) {
-        println(if (cupra.walk(3)) "Cat walked successfully" else "Feed your damn cat")
+        println(if (cupra.walk(1)) "Cat hath walked" else "Feed your damn cat")
     }
     println("$cupra")
 }
