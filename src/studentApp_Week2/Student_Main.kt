@@ -10,7 +10,7 @@ fun main() {
         val courseIn = readLine().toString()
         println("Enter the student's mark:")
         val markIn: Double? = readLine()?.toDouble()
-        val student = Student_Class(idIn, nameIn, courseIn, markIn)
+        val student = StudentClass(idIn, nameIn, courseIn, markIn)
         println("$student")
     }
 }
