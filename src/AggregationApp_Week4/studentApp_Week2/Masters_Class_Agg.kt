@@ -1,8 +1,6 @@
-package studentApp_Week2
+package AggregationApp_Week4.studentApp_Week2
 
-import AggregationApp_Week4.studentApp_Week2.Student_Abstract_Agg
-
-class Masters_Class(override val id: String, override val name: String, override val course: String): Student_Abstract_Agg(id, name, course) {
+class Masters_Class_Agg(override val id: String, override val name: String, override val course: String): Student_Abstract_Agg(id, name, course) {
 
     override fun getGrade(): String {
         val degree = when(mark) {
